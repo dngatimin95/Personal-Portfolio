@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Darren Ngatimin</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/modern_style.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function scrollto(div) {
+        $('html,body').animate({
+          scrollTop: $("#"+div).offset().top
+        },'slow');
+      }
+
+    </script>
+  </head>
+
+  <style>
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+    }
+  </style>
+
+  <body>
+    <div id="header">
+      <li onclick="scrollto('home');">home</li>
+      <li onclick="scrollto('about');">about</li>
+      <li onclick="scrollto('experience');">experience</li>
+      <li onclick="scrollto('projects');">projects</li>
+      <li onclick="scrollto('resume');">resume</li>
+    </div>
+
+    <div id="home">
+      <h1>darren ngatimin<span class="blinking-cursor">|</span></h1>
+      <p>data scientist | software engineer</p>
+
+      <a class="scroll-link" onclick="scrollto('about');">
+		      <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+		      <g fill="none" fill-rule="evenodd">
+			         <rect width="70" height="118" x="1.5" y="1.5" stroke="#fffff2" stroke-width="3" rx="36"/>
+			         <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#fffff2"/>
+		      </g>
+	        </svg>
+	    </a>
+    </div>
+
+    <div id="about">
+      <h2>about me</h2>
+      <p>Hi there, </p>
+
+      <p>Python, SQL, C, CSS, Golang, HTML5, Java, JavaScript, R, SPSS, Tableau, Microsoft Office (Advanced Excel, Access, Word, PowerPoint, Outlook)
+Native English, Intermediate Chinese and Bahasa Indonesia</p>
+
+      <p>Bentley Programming Club Vice President, Computer Science Society, Hackathon Participant (BostonHacks, Brown Datathon, HackHarvard, Hack the Heights), Marathon Runner (Standard Chartered Marathon, Brooklyn Marathon)</p>
+
+    </div>
+
+    <div id="experience">
+      <h2>professional experience</h2>
+      <p style="text-align:left;">Grab Holdings Inc., <i>Data Scientist (Analytics)</i> <span style="float:right;">June 2021 - Onwards</span></p>
+      <p style="text-align:left;">Allego Inc., <i>Data Analyst</i> <span style="float:right;">June 2020 - December 2020</span></p>
+      <p style="text-align:left;">Motus LLC, <i>Data Engineer Intern</i> <span style="float:right;">June 2019 - August 2019</span></p>
+      <p style="text-align:left;">Boston College, <i>Teaching Assistant</i> <span style="float:right;">January 2019 - May 2020</span></p>
+      <p style="text-align:left;">Bentley University, <i>CIS Sandbox Tutor</i> <span style="float:right;">September 2017 - May 2018</span></p>
+      <p style="text-align:left;">Singapore Armed Forces, <i>Non Commissioned Army Officer</i> <span style="float:right;">September 2014 - August 2016</span></p>
+      <hr>
+      <h2>education</h2>
+      <p style="text-align:left;">Boston College, Caroll School of Management <span style="float:right;">September 2018 - May 2020</span></p>
+      <p style="text-align:left;">Bachelor of Science, Management w. Concentrations in Computer Science and Business Analytics</p>
+      <p style="text-align:left;">Cumulative GPA: 3.853 || Major GPA: 3.917</p>
+      <br>
+      <p style="text-align:left;">Bentley University <span style="float:right;">September 2016 - May 2018</span></p>
+      <p style="text-align:left;">Candidate for Bachelor of Science, Computer Information System</p>
+      <p style="text-align:left;">Cumulative GPA: 3.85 || Major GPA: 4.00</p>
+    </div>
+
+    <div id="projects">
+      <h2>projects</h2>
+      <p>Below are some of the personal projects I've worked on. Feel free to reach out to me if you have any questions.</p>
+      <h3 style="text-align:left;">data related</h3>
+      <ul style="text-align:left;">
+        <li><a href="https://github.com/dngatimin95/Glassdoor_Scrape" target="_blank" rel="noopener noreferrer">Glassdoor Scrape</a></li>
+        <dt>Scraping the Glassdoor website for skills and qualifications needed for certain professions such as Data Analyst, Data Scientist or Software Engineers before visualizing them.</dt>
+        <li><a href="https://github.com/dngatimin95/BigQuery_Tour" target="_blank" rel="noopener noreferrer">BigQuery Tour</a></li>
+        <dt>A simple script that queries results from the geo_international_ports dataset and stores it in a table within my own dataset on Google Cloud Platform.</dt>
+        <li><a href="https://github.com/dngatimin95/NY_Food_List" target="_blank" rel="noopener noreferrer">NY Food List</a></li>
+        <dt>Gathering monthly must-try restaurants from websites such as Eater and The Infatuation before compiling them into a dataset and automatically sending them to users via email.</dt>
+      </ul>
+      <br>
+      <h3 style="text-align:left;">ml related</h3>
+      <ul style="text-align:left;">
+        <li><a href="https://github.com/dngatimin95/Presence_Check" target="_blank" rel="noopener noreferrer">Presence Check</a></li>
+        <dt>A simple alternative to checking attendance by detecting people through the computer's camera and recognizing them based on images stored in the dataset.</dt>
+        <li><a href="https://github.com/dngatimin95/Waifu_Detect" target="_blank" rel="noopener noreferrer">Waifu Detect</a></li>
+        <dt>Detecting anime characters and predicting their names in real time based on an anime character dataset that the user creates by scraping images off the web.</dt>
+        <li><a href="https://github.com/dngatimin95/ML_Deep_Dive" target="_blank" rel="noopener noreferrer">ML Deep Dive</a></li>
+        <dt>Exploring different ML Algorithms using scikit-learn while learning more about sentiment analysis. Also includes a script which detects one's mental health and provides a brief respite.</dt>
+      </ul>
+      <br>
+      <h3 style="text-align:left;">general coding</h3>
+      <ul style="text-align:left;">
+        <li><a href="https://github.com/dngatimin95/Tic_Tac_Go" target="_blank" rel="noopener noreferrer">Tic Tac Go</a></li>
+        <dt>Simple Tic-Tac-Toe Game written in Go which allow users to play either with other people locally, an easy AI or an undefeatable AI. (Thanks to the minmax algorithm)</dt>
+        <li><a href="https://github.com/dngatimin95/One_More_Step_To_Go" target="_blank" rel="noopener noreferrer">One More Step to Go</a></li>
+        <dt>Simple Golang programs and algorithms as I learn Go</dt>
+        <li><a href="https://github.com/dngatimin95/Code_R_eview" target="_blank" rel="noopener noreferrer">Code R-eview</a></li>
+        <dt>Basic R code with ML algorithms</dt>
+        <li><a href="https://github.com/dngatimin95/Implementing_Algorithms" target="_blank" rel="noopener noreferrer">Implementing Algorithms</a></li>
+        <dt>Implementing Data Structures and Algorithms essential to interviews, as well as other things such as Dynamic Programming and Backtracking.</dt>
+      </ul>
+      <br>
+      <h3 style="text-align:left;">under construction</h3>
+      <ul style="text-align:left;">
+        <li><a href="https://github.com/dngatimin95/pyGame_Tour-WIP-" target="_blank" rel="noopener noreferrer">Pygame Tour</a></li>
+        <dt>Exploring the pygame library to create games such as hangman and snake. Additions to the snake game include controlling the snake through gestures and training an AI to play it</dt>
+        <li><a href="https://github.com/dngatimin95/Count_Blackjack-WIP-" target="_blank" rel="noopener noreferrer">Count Blackjack</a></li>
+        <dt>Inspired by the movie 21, I recreated the blackjack game and also implemented a simple script which allows users to learn how to count cards and play optimally.</dt>
+        <li><a href="https://github.com/dngatimin95/Plot_Gen-WIP-" target="_blank" rel="noopener noreferrer">Plot Gen</a></li>
+        <dt>Generating unique anime descriptions with LSTM units and a GPT2 transformer using data scraped from the MyAnimeList website. (WIP)</dt>
+        <li><a href="https://github.com/dngatimin95/Flask-Site" target="_blank" rel="noopener noreferrer">Flask Site</a></li>
+      </ul>
+    </div>
+
+    <div id="resume">
+      <h2>resume</h2>
+      <p>my resume can be found <a href="https://drive.google.com/file/d/1SKxqSDrkJhMD6OdzKKwnVmA3ro_iFSQ3/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.</p>
+      <p>or reach me via my <a href="https://www.linkedin.com/in/darren-ngatimin/" target="_blank" rel="noopener noreferrer">linkedin</a> or visit my
+        <a href="https://github.com/dngatimin95" target="_blank" rel="noopener noreferrer">github</a>!</p>
+    </div>
+
+  </body>
+</html>
