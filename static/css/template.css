@@ -14,23 +14,8 @@ header {
   text-align: center;
   margin-bottom: 10px;
 }
-/*
-header h1.logo {
-  margin: 0;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  float: none;
-}
 
-header h1.logo:hover {
-  color: #fff;
-  text-decoration: none;
-}*/
-
-/*
- * Centering the body content
- */
+/*Centering the body content*/
 .container {
   width: 100%;
   margin: 0 auto;
