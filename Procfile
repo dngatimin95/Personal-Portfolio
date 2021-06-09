@@ -1,1 +1,1 @@
-web: gunicorn run:personalWeb
+web: gunicorn personalWeb.wsgi
