@@ -4,7 +4,10 @@ body {
   text-align: center;
   width: 100%;
   font-family: 'Noto Sans SC', sans-serif;
-  background-color: #fffff2
+  background-color: #fffff2;
+  height: 100vh;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 #header {
@@ -33,52 +36,45 @@ body {
   color: #fffff2;
 }
 
-#home {
+.section {
   margin-top:100px;
   width:100%;
+  box-sizing:border-box;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+#home {
   height:500px;
   padding:150px;
-  box-sizing:border-box;
   background-color:#46494c;
   color:#fffff2;
 }
 
 #about {
-  margin-top:100px;
-  width:100%;
   height:700px;
   padding:80px;
-  box-sizing:border-box;
   background-color:#fffff2;
   color:#46494c;
 }
 
 #experience {
-  margin-top:100px;
-  width:100%;
   height:800px;
   padding:80px;
-  box-sizing:border-box;
   background-color:#46494c;
   color:#fffff2;
 }
 
 #projects {
-  margin-top:100px;
-  width:100%;
   height:1200px;
   padding:80px;
-  box-sizing:border-box;
   background-color:#fffff2;
   color:#46494c;
 }
 
 #resume {
-  margin-top:100px;
-  width:100%;
   height:400px;
   padding:80px;
-  box-sizing:border-box;
   background-color:#46494c;
   color:#fffff2;
 }

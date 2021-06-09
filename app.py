@@ -2,8 +2,8 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
+@app.route('/hi')
+def hi():
     return render_template('index.html')
 
 @app.route('/about')
@@ -22,8 +22,8 @@ def projects():
 def experience():
     return render_template('experience.html')
 
-@app.route('/hi')
-def hi():
+@app.route('/')
+def index():
     return render_template('modern.html')
 
 if __name__ == "__main__":
