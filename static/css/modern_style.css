@@ -205,7 +205,7 @@ body {
 }
 
 .scroll {
-	animation-name: scroll;
+	animation-ml11: scroll;
 	animation-duration: 1.5s;
 	animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
 	animation-iteration-count: infinite;
