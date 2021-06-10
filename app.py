@@ -22,6 +22,14 @@ def projects():
 def experience():
     return render_template('experience.html')
 
+@app.route('/financials')
+def personal_finance():
+    return render_template('personal_finance.html')
+
+@app.route('/life')
+def life():
+    return render_template('life.html')
+
 @app.route('/')
 def index():
     return render_template('modern.html')

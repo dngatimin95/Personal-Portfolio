@@ -38,6 +38,7 @@ body {
 
 .section {
   margin-top:100px;
+  height:auto;
   width:100%;
   box-sizing:border-box;
   scroll-snap-align: start;
@@ -52,28 +53,29 @@ body {
 }
 
 #about {
-  height:700px;
   padding:80px;
   background-color:#fffff2;
   color:#46494c;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 #experience {
-  height:800px;
   padding:80px;
   background-color:#46494c;
   color:#fffff2;
 }
 
 #projects {
-  height:1200px;
   padding:80px;
   background-color:#fffff2;
   color:#46494c;
 }
 
 #resume {
-  height:400px;
   padding:80px;
   background-color:#46494c;
   color:#fffff2;
@@ -193,37 +195,50 @@ body {
   }
 }
 
-/*mouse scroll icon*/
-.mouse {
-	max-width: $mouse-width;
-	width: 8%;
+.arrows {
+	width: auto;
 	height: auto;
-}
-
-.scroll {
-	animation-ml11: scroll;
-	animation-duration: 1.5s;
-	animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
-	animation-iteration-count: infinite;
-	transform-origin: 50% 20.5px;
-	will-change: transform, opacity;
-	opacity: 1;
-}
-
-.scroll-link {
 	position: absolute;
-	bottom: 40%;
 	left: 50%;
-	transform: translateX(-50%);
+	margin-left: -30px;
+	bottom: 280px;
 }
 
-@keyframes scroll {
-	0%, 20% {
-		transform: translateY(0) scaleY(1);
-	}
+.arrows path {
+	stroke: #ffffff;
+	fill: transparent;
+	stroke-width: 1px;
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite;
+}
 
-	100% {
-		transform: translateY(36px) scaleY(2);
-		opacity: 0;
-	}
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s;
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s;
+}
+
+.arrows path.a3 {
+	animation-delay:0s;
+	-webkit-animation-delay:0s;
 }
