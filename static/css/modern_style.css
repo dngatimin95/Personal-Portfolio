@@ -6,8 +6,7 @@ body {
   font-family: 'Noto Sans SC', sans-serif;
   background-color: #fffff2;
   height: 100vh;
-  overflow: scroll;
-  scroll-snap-type: y mandatory;
+  overflow: hidden;
 }
 
 #header {
@@ -36,6 +35,13 @@ body {
   color: #fffff2;
 }
 
+.allsection {
+  height: 100vh;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+
 .section {
   margin-top:100px;
   height:auto;
@@ -58,6 +64,12 @@ body {
   color:#46494c;
 }
 
+#skills {
+  padding:80px;
+  background-color:#46494c;
+  color:#fffff2;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -65,20 +77,20 @@ img {
 
 #experience {
   padding:80px;
-  background-color:#46494c;
-  color:#fffff2;
-}
-
-#projects {
-  padding:80px;
   background-color:#fffff2;
   color:#46494c;
 }
 
-#resume {
+#projects {
   padding:80px;
   background-color:#46494c;
   color:#fffff2;
+}
+
+#resume {
+  padding:10px;
+  background-color:#fffff2;
+  color:#46494c;
 }
 
 #home h1 {
@@ -117,7 +129,7 @@ img {
 }
 
 #resume a:link {
-  color: #fffff2;
+  color: #000000;
   background-color: transparent;
   text-decoration: none;
 }
