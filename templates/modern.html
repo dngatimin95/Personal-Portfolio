@@ -23,10 +23,11 @@
     }
   </style>
 
-  <body>
+  <body class="allsection">
     <div id="header">
       <li onclick="scrollto('home');">home</li>
       <li onclick="scrollto('about');">about</li>
+      <li onclick="scrollto('skills');">skills</li>
       <li onclick="scrollto('experience');">experience</li>
       <li onclick="scrollto('projects');">projects</li>
       <li onclick="scrollto('resume');">resume</li>
@@ -45,30 +46,39 @@
 
     <div class="section" id="about">
       <h2>about me</h2>
-      <p>Hi there! I am a data enthusiast and tinkerer based in Singapore. I enjoy all things ML/AI related and in my spare time, you'll usually see me hacking things together.</p>
-      <p>Besides coding, I also enjoy reading up on new technologies and learning different languages. Did i mention i also like ML? Cuz i always try to implement projects infused with ML</p>
-      <p>But seriously though... i wonder if neural networks dream of electric sheeps?</p>
-      <hr>
-      <p>Some of the tech skills/languages i've picked up over the years are below:</p>
-      <img src="{{url_for('static', filename='images/c.png')}}" alt="C" width="100" height="100"/>
-      <img src="{{url_for('static', filename='images/golang.png')}}" alt="Golang" width="100" height="100"/>
-      <img src="{{url_for('static', filename='images/java.png')}}" alt="Java" width="100" height="100"/>
-      <img src="{{url_for('static', filename='images/python.png')}}" alt="Python" width="100" height="100"/>
-      <img src="{{url_for('static', filename='images/r.png')}}" alt="R" width="100" height="100"/>
-      <img src="{{url_for('static', filename='images/javascript.png')}}" alt="Javascript" width="100" height="100"/>
-      <img src="{{url_for('static', filename='images/html.png')}}" alt="HTML" width="100" height="100"/>
-      <img src="{{url_for('static', filename='images/css.png')}}" alt="CSS" width="100" height="100"/>
-      <br>
-      <img src="{{url_for('static', filename='images/mysql.png')}}" alt="MySQL" width="100" height="100"/>
-      <img src="{{url_for('static', filename='images/postgresql.png')}}" alt="postgresql" width="100" height="100"/>
-      <img src="{{url_for('static', filename='images/mongodb.png')}}" alt="MongoDB" width="100" height="100"/>
-      <img src="{{url_for('static', filename='images/tableau.png')}}" alt="Tableau" width="100" height="100"/>
-      <img src="{{url_for('static', filename='images/tensorflow.png')}}" alt="Tensorflow" width="100" height="100"/>
-      <img src="{{url_for('static', filename='images/flask.png')}}" alt="Flask" width="100" height="100"/>
-      <img src="{{url_for('static', filename='images/django.png')}}" alt="Django" width="100" height="100"/>
-      <img src="{{url_for('static', filename='images/gcp.png')}}" alt="Google Cloud Platform" width="100" height="100"/>
+      <p>Hi there! I am a data enthusiast and tinkerer based in Singapore.</p>
+      <p>I enjoy all things ML/AI related and in my spare time, I'm usually hacking things together and trying to experiment with frameworks.</p>
+      <p>Besides coding, I also enjoy reading up on new technologies and learning different languages to try and stay up to date.</p>
+      <p>If you don't see me at my computer, then I'm generally away either training for marathons or trying to rock climb.</p>
+      <p>Did i mention i also like data? Cuz most of my projects revolve heavily around data and i try my best to sprinkle abit of ML on my projects :)</p>
+      <p>But besides all that... i wonder if neural networks dream of electric sheeps?</p>
+    </div>
 
-      <p>Some of the human languages i know also include:</p>
+    <div class="section" id="skills">
+      <h2>skills</h2>
+      <p>Some of the tech skills/languages i've picked up over the years are below:</p>
+      <img src="{{url_for('static', filename='images/c.png')}}" alt="C" title="C" width="100" height="100"/>
+      <img src="{{url_for('static', filename='images/golang.png')}}" alt="Golang" title="Golang" width="100" height="100"/>
+      <img src="{{url_for('static', filename='images/java.png')}}" alt="Java" title="Java" width="100" height="100"/>
+      <img src="{{url_for('static', filename='images/python.png')}}" alt="Python" title="Python" width="100" height="100"/>
+      <img src="{{url_for('static', filename='images/r.png')}}" alt="R" title="R" width="100" height="100"/>
+      <br>
+      <img src="{{url_for('static', filename='images/javascript.png')}}" alt="Javascript" title="Javascript" width="100" height="100"/>
+      <img src="{{url_for('static', filename='images/html.png')}}" alt="HTML" title="HTML" width="100" height="100"/>
+      <img src="{{url_for('static', filename='images/css.png')}}" alt="CSS" title="CSS" width="100" height="100"/>
+      <img src="{{url_for('static', filename='images/mysql.png')}}" alt="MySQL" title="MySQL" width="100" height="100"/>
+      <img src="{{url_for('static', filename='images/postgresql.png')}}" alt="postgresql" title="Postgresql" width="100" height="100"/>
+      <img src="{{url_for('static', filename='images/mongodb.png')}}" alt="MongoDB" title="MongoDB" width="100" height="100"/>
+      <br>
+      <img src="{{url_for('static', filename='images/tableau.png')}}" alt="Tableau" title="Tableau" width="100" height="100"/>
+      <img src="{{url_for('static', filename='images/tensorflow.png')}}" alt="Tensorflow" title="Tensorflow" width="100" height="100"/>
+      <img src="{{url_for('static', filename='images/gcp.png')}}" alt="Google Cloud Platform" title="Google Cloud Platform" width="100" height="100"/>
+      <br>
+      <img src="{{url_for('static', filename='images/flask.png')}}" alt="Flask" title="Flask" width="100" height="100"/>
+      <img src="{{url_for('static', filename='images/django.png')}}" alt="Django" title="Django" width="100" height="100"/>
+      <img src="{{url_for('static', filename='images/react.png')}}" alt="React" title="React" width="100" height="100"/>
+      <img src="{{url_for('static', filename='images/git.png')}}" alt="Git" title="Git" width="100" height="100"/>
+      <p>On the other hand, the human languages i speak include:</p>
       <p>English, Intermediate Chinese and Bahasa Indonesia, Elementary Korean and Japanese</p>
     </div>
 
@@ -125,7 +135,7 @@
         <li><a href="https://github.com/dngatimin95/Implementing_Algorithms" target="_blank" rel="noopener noreferrer">Implementing Algorithms</a></li>
         <dt>Implementing Data Structures and Algorithms essential to interviews, as well as other things such as Dynamic Programming and Backtracking.</dt>
         <li><a href="https://github.com/dngatimin95/Flask-Site" target="_blank" rel="noopener noreferrer">Personal Portfolio</a></li>
-        <dt>Personal Website built with Flask, HTML and CSS hosted on Heroku. There are two parts to this website. The other one can be accessed via /hi</dt>
+        <dt>Personal Website built with Flask, HTML and CSS hosted on Heroku. There are two parts to this website. The other one can be accessed via dngatimin.com/hi</dt>
       </ul>
       <br>
       <h3 style="text-align:left;">under construction</h3>
